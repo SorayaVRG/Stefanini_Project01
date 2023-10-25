@@ -3,20 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Stefanini_Project01.Models;
 
 #nullable disable
 
-namespace Stefanini_Project01.Migrations
+namespace Stefanini_Project01.Migrations.Movie
 {
     [DbContext(typeof(MovieContext))]
-    [Migration("20231025041422_Initial")]
-    partial class Initial
+    partial class MovieContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
